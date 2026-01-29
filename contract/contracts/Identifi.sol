@@ -202,7 +202,7 @@ contract Identifi {
         return getUserByUsername(usernameKey);
     }
 
-    function getUsernameBAddress(address _address) public view returns (string memory) {
+    function getUsernameByddress(address _address) public view returns (string memory) {
         return addressToUsername[_address];
     }
 

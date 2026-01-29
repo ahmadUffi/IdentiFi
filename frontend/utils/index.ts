@@ -6,8 +6,6 @@ dotenv.config();
 const contractAddress = process.env.CONTRACTADDRESS as string;
 const contractAbi = identifi.abi;
 
-// please write me ignore eslint any
-
 export const contract = async () => {
   if (!window.ethereum) {
     throw new Error("Ethereum provider not found");
@@ -23,7 +21,7 @@ export const contract = async () => {
   const contractReader = new ethers.Contract(
     contractAddress,
     contractAbi,
-    signer
+    signer,
   );
 
   return contractReader;
