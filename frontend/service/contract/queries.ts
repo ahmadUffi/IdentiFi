@@ -3,7 +3,7 @@ import {
   SocialLinks,
   Visibility,
   ProfesionalInfo,
-} from "./../types/userType";
+} from "../../types/userType";
 import { contract } from "./index";
 
 // parse error function
