@@ -1,12 +1,12 @@
 import { ethers } from "ethers";
 import identifi from "./Identifi.json";
-import * as dotenv from "dotenv";
-dotenv.config();
 
-const contractAddress = process.env.CONTRACTADDRESS as string;
+const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS as string;
 const contractAbi = identifi.abi;
 
 export const contract = async () => {
+  console.log("contract abi:", contractAbi);
+  console.log("contract address:", contractAddress);
   if (!window.ethereum) {
     throw new Error("Ethereum provider not found");
   }

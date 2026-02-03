@@ -1,5 +1,6 @@
 "use client";
 
+import ActionButton from "./_components/action-button";
 import Logo from "./_components/Logo";
 import Menu from "./_components/Menu";
 
@@ -13,9 +14,9 @@ const Navbar = () => {
       <div className="flex items-center justify-center">
         <Logo />
         <Menu />
-        {/* menu */}
       </div>
       {/* action button */}
+      <ActionButton />
     </nav>
   );
 };
